@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>304 Time Freeze | West Virginia Photography</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --honey-stain: #E5B13A; /* Matches the yellow in the logo */
+            --barn-wood: #4B3621;
+            --parchment: #FDFBF5;
+            --deep-shadow: #2D1E12;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--parchment);
+            color: var(--deep-shadow);
+        }
+
+        /* Navigation / Header */
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--honey-stain);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo-img {
+            max-width: 250px;
+            height: auto;
+        }
+
+        /* Hero Section - Recommended: The Red Car Photo */
+        .hero {
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('hero.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-family: 'Arvo', serif;
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-style: italic;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        /* About Section */
+        .content-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .profile-wrapper img {
+            width: 100%;
+            border: 10px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .about-text h3 {
+            font-family: 'Arvo', serif;
+            font-size: 2rem;
+            color: var(--barn-wood);
+            margin-top: 0;
+        }
+
+        /* Contact/Email Section */
+        .inquiry-section {
+            background-color: var(--barn-wood);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .email-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 50px;
+            background-color: var(--honey-stain);
+            color: var(--deep-shadow);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        .email-link:hover {
+            transform: translateY(-3px);
+            background-color: #f0c356;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            background-color: #fff;
+            color: #777;
+        }
+
+        footer a {
+            color: #d12c2c; /* RedTech Red */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid { grid-template-columns: 1fr; text-align: center; }
+            .hero h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.jpg" alt="304 Time Freeze Logo" class="logo-img">
+    </header>
+
+    <section class="hero">
+        <p>Freezing Time on the Backroads of West Virginia</p>
+        <h2>One Snap at a Time</h2>
+    </section>
+
+    <div class="content-container">
+        <div class="about-grid">
+            <div class="profile-wrapper">
+                <img src="trish.jpg" alt="Patricia Trish Ford">
+            </div>
+            <div class="about-text">
+                <h3>Meet Trish Ford</h3>
+                <p>
+                    Patricia "Trish" Ford is an aspiring photographer dedicated to making high-quality photography accessible to all. 
+                    With a focus on capturing authentic moments, Trish provides professional service that is as affordable as it is beautiful.
+                </p>
+                <p>
+                    Whether you are looking for family portraits, couples sessions, or a creative project, 
+                    Trish's goal is to freeze those fleeting moments so you can cherish them for a lifetime.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section class="inquiry-section">
+        <h3>Book Your Session</h3>
+        <p>Interested in a session? Reach out today to discuss availability and receive our current pricing guide.</p>
+        <a href="mailto:trish@304timefreeze.com" class="email-link">Email Us for Details</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 304 Time Freeze Photography</p>
+        <p>Made by <a href="https://goredtech.com/">RedTech LLC</a></p>
+    </footer>
+
+</body>
+</html>
