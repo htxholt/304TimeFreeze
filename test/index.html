@@ -68,6 +68,13 @@
             padding: 80px 20px;
         }
 
+        .centered-photo {
+          width: 70%;            /* Photo takes up 70% of the page width */
+          height: auto;          /* Keeps original aspect ratio intact */
+          display: block;        /* Changes inline element to block */
+          margin: 0 auto;        /* Centers the block on the page */
+        }
+
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1.5fr;
@@ -150,7 +157,7 @@
     <!--<div class="content-container">
         <div class="about-grid">
             <div class="profile-wrapper">-->
-            <div style:"width=70%;height:auto;display:block;margin:0 auto;">
+            <div class="centered-photo">
                 <img src="about.jpg" alt="Patricia Trish Ford">
             </div>
             <!--<div class="about-text">
