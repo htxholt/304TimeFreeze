@@ -173,11 +173,13 @@
         <p>Interested in a session? Reach out today to discuss availability and receive our current pricing guide.</p>
         <a href="mailto:trish@304timefreeze.com" class="email-link">Email Us for Details</a>
     </section>
-    <!-- 1. The Facebook JavaScript SDK (Load once per page, preferably right after <body>) -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://www.facebook.com/profile.php?id=61572138333358"></script>
+    
 
-    <!-- 2. The Feed Container (Place exactly where you want the feed to display) -->
+    <!-- 1. Facebook JavaScript SDK (Required for the feed to render) -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://facebook.net"></script>
+
+    <!-- 2. Your Live Custom Facebook Feed Container -->
     <div class="fb-page" 
          data-href="https://www.facebook.com/profile.php?id=61572138333358" 
          data-tabs="timeline" 
@@ -187,7 +189,11 @@
          data-adapt-container-width="true" 
          data-hide-cover="false" 
          data-show-facepile="true">
+      <blockquote cite="https://www.facebook.com/profile.php?id=61572138333358" class="fb-xfbml-parse-ignore">
+        <a href="https://www.facebook.com/profile.php?id=61572138333358">Loading Facebook Feed...</a>
+      </blockquote>
     </div>
+
 
 
     <footer>
