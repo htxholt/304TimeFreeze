@@ -68,16 +68,9 @@
             padding: 80px 20px;
         }
 
-        .centered-photo {
-          width: 70%;            /* Photo takes up 70% of the page width */
-          height: auto;          /* Keeps original aspect ratio intact */
-          display: block;        /* Changes inline element to block */
-          margin: 0 auto;        /* Centers the block on the page */
-        }
-
         .about-grid {
             display: grid;
-            grid-template-columns: 1fr 1.5fr;
+            grid-template-columns: 1.5fr 1fr;
             gap: 50px;
             align-items: center;
         }
@@ -154,8 +147,13 @@
         <h2>One Snap at a Time</h2>
     </section>
     <section class="content-container">
-        <div>
-            <img src="about.jpg" alt="Patricia Trish Ford">
+        <div class=about-grid">
+            <div>
+                <img src="about.jpg" alt="Patricia Trish Ford">
+            </div>
+            <div>
+                <p>Hello World</p>
+            </div>
         </div>
     </section>
     <section class="inquiry-section">
